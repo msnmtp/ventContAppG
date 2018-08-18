@@ -1,0 +1,38 @@
+extends capsalera
+
+block content
+	div.container
+		div.row
+			div.col-md
+				- var cardheadertitle = "Controls microbiològics";
+				- var cardtitle = "";
+				- var cardsubtitle = "";
+				- var cardtext ="Superfícies, Matèria Prima, Ingredients, Additius, Producte Acabat, Manipuladors, ...";
+				- var firstlink = "resultats";
+				- var secondlink = "gestió";
+				- var color = "success";
+				include card
+			div.col-md
+				- var cardheadertitle = "Controls físic-químics";
+				- var cardtitle = "";
+				- var cardsubtitle = "";
+				- var cardtext ="Especificacions, nutricionals, ETG, ...";
+				- var firstlink = "resultats";
+				- var secondlink = "gestió";
+				- var color = "warning";
+				include card
+			div.col-md
+				- var cardheadertitle = "Controls al.lèrgens";
+				- var cardtitle = "";
+				- var cardsubtitle = "";
+				- var cardtext ="Validacions, neteja, producte final, ...";
+				- var firstlink = "resultats";
+				- var secondlink = "gestió";
+				- var color = "danger";
+				include card
+	- var footerheader = "gestions generals";
+	- var link1 = "/laboratoris";
+	- var titlelink1 = "laboratoris";
+	- var link2 = "/";
+	- var titlelink2 = "tècniques" 
+	include footer

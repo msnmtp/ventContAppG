@@ -1,0 +1,59 @@
+footer {
+	margin-top: 3rem;
+}
+.containertitol{
+	margin-top: 40px;
+}
+p.card-text{
+	font-size: 0.75rem !important;
+}
+.card-text {
+	min-height: 50px;
+}
+#card-link-1 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+}
+#card-link-2 {
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+}
+ul#menufooter {
+	list-style-type: none;
+	padding:0;
+}
+a#footerlink {
+	padding: 0;
+}
+.footer {
+	padding-bottom: 40px;
+}
+.card {
+	margin-top: 20px;
+}
+.botoformularisubmit {
+	margin-top: 30px;
+	/*padding-right: 50px;
+	padding-left: 50px;*/
+	width: 200px;
+}
+.botoformularireset{
+	margin-top: 30px;
+	margin-left: 30px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.laboratoris p {
+	font-size: 0.75rem;
+	line-height: 0rem;
+	margin-top: 0.5rem;
+}
+.laboratoris button {
+	font-size: 0.75rem;
+}
+.laboratoris .titollaboratori{
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}

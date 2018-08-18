@@ -1,0 +1,73 @@
+extends capsalera
+
+block content
+	div.container
+		div.row
+			div.col
+				h4 FORMULARI D'ENTRADA DE LABORATORIS
+		form(action="" method="POST")
+			div.row
+				div.col-md-6
+					- var textlabel = "NOM LABORATORI";
+					- var type = "text";
+					- var id = "nom";
+					- var placeholder = "entreu el nom del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "ADREÇA";
+					- var type = "text";
+					- var id = "adreca";
+					- var placeholder = "entreu l'adreça del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "CODI POSTAL";
+					- var type = "number";
+					- var id = "codipostal";
+					- var placeholder = "entreu el codi postal del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "POBLACIÓ";
+					- var type = "text";
+					- var id = "poblacio";
+					- var placeholder = "entreu la població del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "PROVINCIA";
+					- var type = "text";
+					- var id = "provincia";
+					- var placeholder = "entreu la província del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+				div.col-md-6
+					- var textlabel = "TELÈFON";
+					- var type = "text";
+					- var id = "telefon";
+					- var placeholder = "entreu el telèfon del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "PERSONA DE CONTACTE";
+					- var type = "text";
+					- var id = "contacte";
+					- var placeholder = "entreu la persona de contacte del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "EMAIL";
+					- var type = "email";
+					- var id = "email1";
+					- var placeholder = "entreu el email principal del laboratori";
+					- var camprequerit = true;
+					include bootstrapinputform
+					- var textlabel = "(EMAIL)";
+					- var type = "email";
+					- var id = "email2";
+					- var placeholder = "entreu un altre email (opcional)";
+					- var camprequerit = false;
+					include bootstrapinputform
+					input.btn.btn-outline-success.botoformularisubmit(type="submit" value="Entrar")
+					input.btn.btn-outline-danger.botoformularireset(type="reset" value="Borrar")
+	- var footerheader = "gestions generals";
+	- var link1 = "/laboratoris";
+	- var titlelink1 = "laboratoris";
+	- var link2 = "/";
+	- var titlelink2 = "tècniques" 
+	include footer

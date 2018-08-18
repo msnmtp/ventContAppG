@@ -1,0 +1,41 @@
+extends capsalera
+
+block content
+	div.container
+		div.row
+			div.col
+				h4 CONFIRMACIÓ LABORATORI ENTRAT
+				p les següents dades han estat entrades a la base de dades de laboratoris
+		div.row
+			table.table.table-bordered.table-dark
+				tbody
+					tr
+						td(colspan="4") #{laboratori.nom}
+					tr
+						td adreça
+						td #{laboratori.adreca}
+						td codi postal
+						td #{laboratori.codipostal}
+					tr
+						td població
+						td #{laboratori.poblacio}
+						td província
+						td #{laboratori.provincia}	
+					tr
+						td telèfon
+						td #{laboratori.telefon}
+						td contacte
+						td #{laboratori.contacte}
+					tr
+						td 1er. email
+						td #{laboratori.email1}
+						td 2on. email
+						td #{laboratori.email2}
+
+	- var footerheader = "gestions generals";
+	- var link1 = "/laboratoris";
+	- var titlelink1 = "laboratoris";
+	- var link2 = "/";
+	- var titlelink2 = "tècniques" 
+	include footer
+					

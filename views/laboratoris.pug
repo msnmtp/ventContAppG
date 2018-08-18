@@ -1,0 +1,36 @@
+extends capsalera
+
+block content
+	div.container
+		div.row
+			div.col
+				h4 LLISTAT DE LABORATORIS
+				hr
+		div.row
+			each registre in registreslaboratoris
+				.col-md-4.laboratoris
+					p.titollaboratori #{registre.nom}
+					p adreça: #{registre.adreca}
+					p codi postal: #{registre.codipostal}
+					p població: #{registre.poblacio}
+					p província: #{registre.provincia}
+					p telèfon: #{registre.telefon}
+					p contacte: #{registre.contacte}
+					p primer email: #{registre.email1}
+					p segon email: #{registre.email2}
+					div(style="text-align:right;")
+						form(name="borrarlaboratori", method="post", action="/borrarlaboratori")
+							input(type="hidden" name="_id" value=registre._id)
+							input(type="hidden" name="nom" value=registre.nom)
+							button.btn.btn-link(type=submit) borrar
+						form(name="modificarlaboratori", method="post" action="/modificarlaboratori")
+							input(type="hidden" name="registre_id" value=registre._id)
+							//input(type="hidden" name="adreca" value=registre.adreca)
+							button.btn.btn-link modificar
+						hr
+	- var footerheader = "gestions laboratoris";
+	- var link1 = "/entradalaboratoris";
+	- var titlelink1 = "entrada de dades";
+	- var link2 = "/";
+	- var titlelink2 = "tècniques" 
+	include footer

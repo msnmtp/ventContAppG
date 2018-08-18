@@ -1,0 +1,53 @@
+extends capsalera
+
+block content
+    .container
+        .row
+            .col-md-12
+                p   aquest és el laboratori que has escollit per modificar alguna de les seves dades, pot corregir a sobre
+                    cada camp i llavors prèmer el botó corregir, si vols tornar enrera prem el botó enrera
+        .row
+            .col-md-12
+                form(action="/laboratorimodificat" method="post")
+                    .form-row
+                        .col-md-3.form-group
+                            label(for="nom") nom laboratori
+                            input.form-control(type="text" placeholder=laboratori.nom id="nom" name="nom" value=laboratori.nom)
+                        .col-md-3.form-group
+                            label(for="adreca") adreça
+                            input.form-control(type="text" placeholder=laboratori.adreca id="adreca" name="adreca" value=laboratori.adreca)
+                        .col-md-3.form-group
+                            label(for="codipostal") codi postal
+                            input.form-control(type="number" placeholder=laboratori.codipostal id="adreca" name="codipostal" value=laboratori.codipostal)
+                        .col-md-3.form-group
+                            label(for="poblacio") població
+                            input.form-control(type="text" placeholder=laboratori.poblacio id="poblacio" name="poblacio" value=laboratori.poblacio)
+                    .form-row
+                        .col-md-3.form-group
+                            label(for="provincia") província
+                            input.form-control(type="text" placeholder=laboratori.provincia id="provincia" name="provincia" value=laboratori.provincia)
+                        .col-md-3.form-group
+                            label(for="contacte") persona de contacte
+                            input.form-control(type="text" placeholder=laboratori.contacte id="contacte" name="contacte" value=laboratori.contacte)
+                        .col-md-3.form-group
+                            label(for="email1") 1er. email
+                            input.form-control(type="email" placeholder=laboratori.email1 id="email1" name="email1" value=laboratori.email1)
+                        .col-md-3.form-group
+                            label(for="email2") 2on. email
+                            input.form-control(type="email" placeholder=laboratori.email2 id="email2" name="email2" value=laboratori.email2)
+                    .form-row
+                        col-md-3.form-group
+                            label(for="telefon") telèfon
+                            input.form-control(type="text" placeholder=laboratori.telefon id="telefon" name="telefon" value=laboratori.telefon)
+                            input(type="hidden" value=laboratori._id name="id")
+                            input.btn.btn-outline-success.botoformularisubmit(type="submit" value="Corregir")
+    .container(style="padding-left: 10px;")
+        .row
+            .col-md-12
+                a.btn.btn-outline-warning.botoformularisubmit(href="/laboratoris") Enrera
+    - var footerheader = "gestions laboratoris";
+    - var link1 = "/entradalaboratoris";
+    - var titlelink1 = "entrada de dades";
+    - var link2 = "/";
+    - var titlelink2 = "tècniques" 
+    include footer
