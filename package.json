@@ -7,7 +7,6 @@
   "description": "aplicació de gestió de controls de Ramón Ventulà S.A.",
   "main": "index.js",
   "scripts": {
-    "start": "node start.js",
     "watch": "nodemon ./start.js"
   },
   "author": "maneltorrent",
